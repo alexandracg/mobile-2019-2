@@ -1,0 +1,47 @@
+<ion-content padding>
+  <div style="text-align: center">
+    <h2> <b> CADASTRAR OBRAS </b> </h2>
+  </div>
+    
+  <ion-content style="top: 2%">
+    <div style="text-align: center">
+      <div style="display: inline-block; text-align: left">
+        <ion-label> Foto </ion-label>
+        <div class="button" style="border: solid; border-radius: 5%; height: 200px; width: 270px; text-align: center">
+            <ion-icon name="camera" style="color: white; font-size: 100px"></ion-icon>
+            <p style="color: white; font-size: 20px"> ADICIONAR </p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+
+  <ion-content style="top: -60%">
+    <div style="text-align: center">
+      <div style="display: inline-block; text-align: left">
+        <ion-label> Detalhes </ion-label>
+        <ion-input style="border-bottom: solid; width: 350px"></ion-input>
+      </div>
+    </div>
+  </ion-content>
+
+    <ion-content style="top: -148%">
+      <div style="text-align: center">
+        <div style="display: inline-block; text-align: left">
+          <ion-label> Descrição </ion-label>
+          <ion-input style="border-bottom: solid; width: 350px"></ion-input>
+        </div>
+      </div>
+    </ion-content>
+  
+    <ion-content style="top: -238%">
+      <div style="text-align: center">
+        <ion-button color="dark" expand="block" [routerLink]="['/obras-page']"> CADASTRAR </ion-button>
+      </div>
+    </ion-content>
+
+    <ion-content style="top: -320%">
+      <div style="text-align: center">
+        <ion-icon class="button" name="home"style="font-size: 50px; border-radius: 50px; border: solid; border-color: black; background-color: black; color: white" [routerLink]="['/admin-home']"></ion-icon>
+      </div>
+    </ion-content>
+</ion-content>
