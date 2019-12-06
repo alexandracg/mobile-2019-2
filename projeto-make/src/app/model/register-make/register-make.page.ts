@@ -48,7 +48,7 @@ export class RegisterMakePage implements OnInit {
     this.http.post('https://upload.uploadcare.com/base/', data)
     .subscribe(event => {
       console.log(event)
-      this.makeImg = event.valueOf().file
+      this.makeImg = event.valueOf().file;
     })
   }
 }
