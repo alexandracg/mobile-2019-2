@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar color="tertiary">
+        <div style="text-align: center; margin-left: -80%;">
+            <P id="wha-title"> WHA! </P>
+            <P id="do-you-title"> DO YOU </P>
+            <P id="think-title"> THINK? </P>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content style="text-align: center;">
+    <div style="text-align: center;">
+        <ion-icon name="md-rose" color="tertiary" id="icon-make-center"></ion-icon>
+        <P id="wha"> WHA! </P>
+        <P id="do-you"> DO YOU </P>
+        <P id="think"> THINK? </P>
+    </div>
+    <ion-button expand="block" color="tertiary" (click)="openLoginPage()">
+        Login
+    </ion-button>
+    <ion-button expand="block" color="primary">
+        Facebook
+    </ion-button>
+    <ion-button expand="block" color="tertiary" (click)="openRegisterAccountPage()">
+        Criar Conta
+    </ion-button>
+</ion-content>

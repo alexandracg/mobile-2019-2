@@ -1,0 +1,12 @@
+<ion-content>
+    <ion-card color="tertiary" style="margin-top: 15%; text-align: center" padding>
+        <ion-card-title style="text-align: center; margin-bottom: 5%;"> INSERIR MAKE </ion-card-title>
+        <div id="camera">
+            <img id="img" *ngIf="makeImg" src="https://ucarecdn.com/{{makeImg}}/" />
+        </div>
+        <input type="file" (change)="fileChanged($event)" />
+
+        <ion-button fill="solid" expand="block" (click)="registerMake()" style="margin-top: 15%;">CONFIRMAR</ion-button>
+        <ion-button fill="solid" expand="block" color="danger" (click)="homeMake()">CANCELAR</ion-button>
+    </ion-card>
+</ion-content>

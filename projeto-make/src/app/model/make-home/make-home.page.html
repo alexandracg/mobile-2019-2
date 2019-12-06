@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar color="tertiary">
+        <div style="text-align: center; float: left; margin-left: 2.5%;">
+            <P id="wha-title"> WHA! </P>
+            <P id="do-you-title"> DO YOU </P>
+            <P id="think-title"> THINK </P>
+        </div>
+        <div style="float: right; margin-right: 2.5%;">
+            <ion-button (click)="logout()">Sair</ion-button>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let make of makes" color="tertiary">
+        <ion-card-header>
+            <div>
+                <ion-card-subtitle style="text-transform: uppercase;">Autor : {{make.Author}}</ion-card-subtitle>
+                <ion-card-subtitle style="text-transform: uppercase;">Likes : {{make.Likes}}</ion-card-subtitle>
+            </div>
+        </ion-card-header>
+        <div id="img-area">
+            <img id="img" src="https://ucarecdn.com/{{make.Img}}/" />
+        </div>
+        <ion-button size="small" id="button-like" (click)="like(make.id)">
+            <ion-icon size="small" slot="icon-only" name="md-thumbs-up"></ion-icon>
+        </ion-button>
+    </ion-card>
+
+    <div style="text-align: center;">
+        <ion-button color="tertiary" (click)="openRegisterMakePage()">ADICIONAR MAKE</ion-button>
+    </div>>
+</ion-content>
